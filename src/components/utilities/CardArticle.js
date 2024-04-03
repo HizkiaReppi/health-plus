@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import TextWithEllipsis from './TextWithEllipsis';
-import formatTimestamp from '@/utils/formatTimestamp';
+import { formatTimestamp } from '@/utils/formatTimestamp';
 
 const CardArticle = (props) => {
   const formattedDate = formatTimestamp(props.publishedAt);

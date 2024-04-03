@@ -11,7 +11,7 @@ function formatCurrentDate() {
   return new Date(currentDateISO);
 }
 
-export default function formatTimestamp(timestamp) {
+export const formatTimestamp = (timestamp) => {
   // Mengambil tanggal sekarang
   const currentDate = formatCurrentDate();
 
@@ -38,4 +38,14 @@ export default function formatTimestamp(timestamp) {
       month < 10 ? '0' + month : month
     }-${year}`;
   }
-}
+};
+
+export const formatMonth = (timestamp) => {
+  const targetDate = new Date(timestamp);
+
+  const day = targetDate.getDate();
+  const month = targetDate.toLocaleString('default', { month: 'long' });
+  const year = targetDate.getFullYear();
+
+  return `${day < 10 ? '0' + day : day} ${month} ${year}`;
+};

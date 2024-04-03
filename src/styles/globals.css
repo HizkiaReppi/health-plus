@@ -11,3 +11,13 @@
     background: linear-gradient(to bottom, #d9d9d9 2%, #737373 56%);
   }
 }
+
+@layer utilities {
+  ol {
+    @apply list-decimal ml-5;
+  }
+
+  .blog h6 {
+    @apply text-lg font-semibold text-black mb-7;
+  }
+}
