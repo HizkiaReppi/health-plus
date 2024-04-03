@@ -3,16 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  @keyframes slideRightToLeft {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  .carousel-container {
-    animation: slideRightToLeft 10s linear infinite;
+  .title-section {
+    @apply text-3xl font-semibold text-black mb-8 text-center;
   }
 }

@@ -6,7 +6,7 @@ import NavLink from './NavLink';
 
 const Navbar = () => {
   return (
-    <nav className='sticky top-0 left-0 flex justify-between items-center px-16 py-5 bg-primary-50'>
+    <nav className='sticky top-0 left-0 flex justify-between items-center px-16 py-5 bg-primary-50 z-50 shadow-lg'>
       <Link href='/'>
         <Image src={logo} height={60} />
       </Link>

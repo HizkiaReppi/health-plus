@@ -4,9 +4,7 @@ import { trustedBy } from '@/constants/data';
 const TrustedBy = () => {
   return (
     <section className='px-16 py-8 border-t border-black border-b'>
-      <h2 className='text-3xl font-semibold text-black mb-8 text-center'>
-        Telah Dipercaya Oleh
-      </h2>
+      <h2 className='title-section'>Telah Dipercaya Oleh</h2>
       <div className='flex items-center gap-10 w-screen relative'>
         {trustedBy.map((doctor, index) => (
           <div
