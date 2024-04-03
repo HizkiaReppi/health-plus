@@ -20,7 +20,7 @@ const TipsAndTrik = () => {
         {tipsAndTrik.map((data, index) => (
           <div
             key={index}
-            className='w-[374px] h-[371.69px] bg-primary-50 rounded-[45px] p-3.5 relative'
+            className='w-[374px] h-[371.69px] bg-primary-50 rounded-[45px] p-3.5 relative shadow-xl'
           >
             <Image
               src={data.image}
@@ -32,7 +32,7 @@ const TipsAndTrik = () => {
               <h5 className='text-4xl font-bold uppercase text-[#D9D9D9] mb-3'>
                 {data.title}
               </h5>
-              <p className='text-base font-semibold text-[#D9D9D9]'>
+              <p className='text-base font-semibold text-[#D9D9D9] w-[93%]'>
                 {data.subtitle}
               </p>
             </div>
