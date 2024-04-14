@@ -113,3 +113,70 @@ export const articleData = [
     publishedAt: '2024-03-29T15:00:00Z',
   },
 ];
+
+export const testimonials = [
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3b',
+    image: DrDian,
+    name: 'Anisa Pratiwi',
+    username: 'anisapratiwi',
+    content:
+      'HealthPlus membantu saya meraih hidup sehat dengan mudah. Saya merasa lebih bersemangat dan lebih bertenaga setiap hari!',
+  },
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3c',
+    image: DrDian,
+    name: 'Budi Santoso',
+    username: 'budisantoso88',
+    content:
+      'Saya sangat senang menemukan HealthPlus! Mereka memberikan tips yang bermanfaat dan motivasi yang besar untuk tetap aktif dan sehat.',
+  },
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3d',
+    image: DrDian,
+    name: 'Dian Maulana',
+    username: 'dianmaulana_fit',
+    content:
+      'Terima kasih kepada HealthPlus karena membantu saya memperbaiki pola hidup saya. Sekarang saya merasa lebih sehat dan lebih bahagia!',
+  },
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3e',
+    image: DrDian,
+    name: 'Fitriani Hasanah',
+    username: 'fitriani_hasanah',
+    content:
+      'HealthPlus memberikan saya dukungan dan motivasi yang saya butuhkan untuk mencapai tujuan kesehatan saya. Saya sangat merekomendasikannya!',
+  },
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3f',
+    image: DrDian,
+    name: 'Lutfi Rachman',
+    username: 'lutfirachmanfit',
+    content:
+      'Saya telah mencoba berbagai aplikasi kesehatan, tetapi HealthPlus adalah yang terbaik! Mereka menyediakan panduan yang lengkap dan mudah diikuti.',
+  },
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3g',
+    image: DrDian,
+    name: 'Joko Susanto',
+    username: 'jokosusanto_healthy',
+    content:
+      'HealthPlus adalah teman setia saya dalam perjalanan kesehatan. Saya merasa lebih kuat dan lebih bahagia sekarang!',
+  },
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3h',
+    image: DrDian,
+    name: 'Heru Kusuma',
+    username: 'heru_kusuma',
+    content:
+      'HealthPlus membantu saya menjaga kesehatan mental dan fisik saya dengan cara yang menyenangkan. Saya merasa lebih bersemangat dan lebih sehat!',
+  },
+  {
+    id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3i',
+    image: DrDian,
+    name: 'Gita Wijaya',
+    username: 'gitawijaya.official',
+    content:
+      'Saya sudah mencoba beberapa aplikasi kesehatan, tapi HealthPlus adalah yang terbaik! Fitur-fiturnya sangat bermanfaat dan mudah digunakan.',
+  },
+];
