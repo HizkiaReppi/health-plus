@@ -17,6 +17,10 @@
     @apply list-decimal ml-5;
   }
 
+  a {
+    @apply hover:text-primary-400;
+  }
+
   .blog h6 {
     @apply text-lg font-semibold text-black mb-7;
   }

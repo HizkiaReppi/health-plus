@@ -10,6 +10,8 @@ import MakanSehat from '@/assets/makan-sehat-image.png';
 import Article1 from '@/assets/image-blog-1.png';
 import Article2 from '@/assets/image-blog-2.png';
 import Article3 from '@/assets/image-blog-3.png';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { RiFacebookCircleLine } from 'react-icons/ri';
 
 export const trustedBy = [
   {
@@ -178,5 +180,77 @@ export const testimonials = [
     username: 'gitawijaya.official',
     content:
       'Saya sudah mencoba beberapa aplikasi kesehatan, tapi HealthPlus adalah yang terbaik! Fitur-fiturnya sangat bermanfaat dan mudah digunakan.',
+  },
+];
+
+export const footerSocialMedia = [
+  {
+    title: 'Instagram',
+    href: '#',
+    icon: <FaInstagram className='text-2xl' />,
+  },
+  {
+    title: 'Facebook',
+    href: '#',
+    icon: <RiFacebookCircleLine className='text-2xl' />,
+  },
+  {
+    title: 'WhatsApp',
+    href: '#',
+    icon: <FaWhatsapp className='text-2xl' />,
+  },
+];
+
+export const footerLinks = [
+  {
+    title: 'Navigasi',
+    links: [
+      {
+        title: 'Halaman Utama',
+        href: '/',
+      },
+      {
+        title: 'Tentang Kami',
+        href: '/about',
+      },
+      {
+        title: 'Cek Kebiasaan',
+        href: '/assesment',
+      },
+    ],
+  },
+  {
+    title: 'Artikel',
+    links: [
+      {
+        title: 'Semua Artikel',
+        href: '/articles',
+      },
+      {
+        title: 'Kesehatan Mental',
+        href: '/articles/category/kesehatan-mental',
+      },
+      {
+        title: 'Pola Makan',
+        href: '/articles/category/pola-makan',
+      },
+      {
+        title: 'Aktivitas Fisik',
+        href: '/articles/category/aktivitas-fisik',
+      },
+    ],
+  },
+  {
+    title: 'Lainnya',
+    links: [
+      {
+        title: 'Syarat & Ketentuan',
+        href: '#',
+      },
+      {
+        title: 'Kebijakan Privasi',
+        href: '#',
+      },
+    ],
   },
 ];
