@@ -9,7 +9,7 @@ const NavLink = ({ href, active = false, children }) => {
   return (
     <Link
       href={href}
-      className={`text-lg relative ${
+      className={`text-base md:text-lg relative ${
         active ? 'text-primary-500' : 'text-black'
       } hover:text-primary-500 duration-100`}
       onMouseEnter={() => setActiveHover(true)}
@@ -17,7 +17,7 @@ const NavLink = ({ href, active = false, children }) => {
     >
       {children}
       {(active || activeHover) && (
-        <span className='absolute left-0 -bottom-2 w-full h-0.5 bg-primary-500 rounded-full' />
+        <span className='absolute left-0 -bottom-2 w-full h-0 md:h-0.5 bg-primary-500 rounded-full' />
       )}
     </Link>
   );
