@@ -36,7 +36,7 @@ export const trustedBy = [
   },
   {
     image: DrDian,
-    name: 'Dr. Gabriel Tuju, S.Pd., M.Pd. M.Kes',
+    name: 'Dr. Gabriel Tuju, M.Kes',
     title: 'Spesialis Dokter Universitas',
   },
 ];

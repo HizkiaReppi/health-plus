@@ -4,7 +4,7 @@
 
 @layer components {
   .title-section {
-    @apply text-3xl font-semibold text-black mb-8 text-center;
+    @apply text-xl md:text-3xl font-semibold text-black mb-4 md:mb-8 text-center;
   }
 
   .bg-gradient {

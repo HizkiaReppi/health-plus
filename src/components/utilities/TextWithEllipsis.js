@@ -4,7 +4,7 @@ const TextWithEllipsis = ({ text, wordCount }) => {
   const showEllipsis = cleanText.split(' ').length > wordCount;
 
   return (
-    <p className='text-xs text-justify truncated-text'>
+    <p className='text-[10px] md:text-xs text-justify truncated-text'>
       {truncatedText}
       {showEllipsis && '...'}
     </p>

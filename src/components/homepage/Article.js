@@ -9,37 +9,39 @@ import daunBesarImage from '@/assets/daun-besar.png';
 
 const Article = () => {
   return (
-    <section className='px-16 py-24 bg-primary-100 relative'>
+    <section className='px-10 md:px-16 py-24 bg-primary-100 relative'>
       <>
         <Image
           src={tigaDaunBesarImage}
-          className='absolute -bottom-3.5 -left-4 w-48 object-cover'
+          className='absolute z-0 -bottom-1.5 md:-bottom-3.5 -left-4 w-24 md:w-48 object-cover'
         />
         <Image
           src={tigaDaunKecilImage}
-          className='absolute -top-12 -left-6 w-96 object-cover'
+          className='absolute z-0 -top-6 md:-top-12 -left-6 w-48 md:w-96 object-cover'
         />
         <Image
           src={tigaDaunKecilImage}
-          className='absolute rotate-180 -bottom-5 -right-3 w-80 object-cover'
+          className='absolute z-0 rotate-180 -bottom-5 -right-5 md:-right-3 w-40 md:w-80 object-cover'
         />
         <Image
           src={daunBesarImage}
-          className='absolute -top-3 -right-3 w-40 object-cover'
+          className='absolute z-0 -top-1 md:-top-3 -right-1 md:-right-3 w-20 md:w-40 object-cover'
         />
       </>
-      <div className='flex flex-col items-center mb-14 z-10'>
+      <div className='flex flex-col items-center mb-14 z-20'>
         <h2 className='title-section'>Cek Artikel Terbaru Kami</h2>
         <span className='w-24 h-0.5 bg-primary-500 -mt-3'></span>
       </div>
-      <div className='flex justify-center sm:justify-between items-center flex-wrap gap-y-10 z-10'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-y-10 z-10'>
         {articleData.map((article) => (
           <CardArticle {...article} key={article.id} />
         ))}
       </div>
       <div className='flex justify-center mt-10 z-10'>
         <Link href='/article'>
-          <Button className='px-14'>Lihat Semua Artikel</Button>
+          <Button className='md:px-14 px-7 text-xs md:text-base'>
+            Lihat Semua Artikel
+          </Button>
         </Link>
       </div>
     </section>

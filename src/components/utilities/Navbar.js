@@ -28,7 +28,7 @@ const Navbar = () => {
       <Link href='/'>
         <Image src={logo} className='w-32 md:w-52' />
       </Link>
-      
+
       {/* Menu */}
       <ul className='hidden md:flex justify-between items-center gap-10'>
         <li>
