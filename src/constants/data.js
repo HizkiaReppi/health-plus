@@ -224,19 +224,19 @@ export const footerLinks = [
     links: [
       {
         title: 'Semua Artikel',
-        href: '/articles',
+        href: '/article',
       },
       {
         title: 'Kesehatan Mental',
-        href: '/articles/category/kesehatan-mental',
+        href: '/article/category/kesehatan-mental',
       },
       {
         title: 'Pola Makan',
-        href: '/articles/category/pola-makan',
+        href: '/article/category/pola-makan',
       },
       {
         title: 'Aktivitas Fisik',
-        href: '/articles/category/aktivitas-fisik',
+        href: '/article/category/aktivitas-fisik',
       },
     ],
   },
