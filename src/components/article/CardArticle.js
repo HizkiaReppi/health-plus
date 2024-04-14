@@ -30,12 +30,12 @@ const CardArticle = ({
       } ${className}`}
     >
       {imageLeft ? (
-        <div className='relative rounded-[10px] h-[200px] overflow-hidden mt-4'>
+        <div className='relative rounded-[10px] w-[600px] h-[200px] overflow-hidden mt-4'>
           <div className='absolute inset-0 bg-gradient z-10 opacity-30'></div>
           <Image
             src={image}
             alt={title}
-            className='rounded-[10px] h-[200px] object-cover'
+            className='rounded-[10px] w-[600px] h-[200px] object-cover'
           />
         </div>
       ) : null}
@@ -50,7 +50,7 @@ const CardArticle = ({
             <Image
               src={image}
               alt={title}
-              className='rounded-[10px] h-[200px] object-cover'
+              className='rounded-[10px] w-full h-[200px] object-cover'
             />
           </div>
         ) : null}

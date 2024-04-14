@@ -37,7 +37,10 @@ const DetailArticle = (props) => {
           </span>
         </div>
       </div>
-      <Image src={props.image} className='w-[797.21px] object-cover mt-8' />
+      <Image
+        src={props.image}
+        className='w-full object-cover rounded-lg mt-8'
+      />
       <div
         className='text-justify text-base mt-10 blog leading-loose'
         dangerouslySetInnerHTML={{ __html: props.content }}

@@ -1,19 +1,20 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import AllArticle from '@/components/article/AllArticle';
 import Header from '@/components/article/Header';
 import TitleSection from '@/components/article/TitleSection';
-import Image from 'next/image';
 import polaMakanIcon from '@/assets/icon/pola-makan-icon.png';
 import aktivitasFisikIcon from '@/assets/icon/aktivitas-fisik-icon.png';
 import kesehatanMentalIcon from '@/assets/icon/mental-health-icon.png';
 import allArticleIlustration from '@/assets/all-article-ilustration.png';
-import Link from 'next/link';
+import { articleData } from '@/constants/article_dummy_data';
 
 export default function Article() {
   return (
     <>
       <Header />
       <div className='flex justify-between px-10 md:px-16 mt-16 mb-24 pb-96 relative'>
-        <AllArticle />
+        <AllArticle articles={articleData} />
         <div>
           <TitleSection>Semua Kategori</TitleSection>
           <div className='flex flex-col gap-y-5 mt-14'>

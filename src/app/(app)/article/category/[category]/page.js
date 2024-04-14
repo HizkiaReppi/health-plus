@@ -1,16 +1,17 @@
 'use client';
 
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { articleCategory } from '@/constants/data';
+import { articleData } from '@/constants/article_dummy_data';
 import AllArticle from '@/components/article/AllArticle';
 import TitleSection from '@/components/article/TitleSection';
-import Image from 'next/image';
 import polaMakanIcon from '@/assets/icon/pola-makan-icon.png';
 import aktivitasFisikIcon from '@/assets/icon/aktivitas-fisik-icon.png';
 import kesehatanMentalIcon from '@/assets/icon/mental-health-icon.png';
 import allArticleIlustration from '@/assets/all-article-ilustration.png';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { articleCategory } from '@/constants/data';
-import React from 'react';
 
 export default function CategoryArticle({ params }) {
   const category = articleCategory.find(
@@ -25,6 +26,10 @@ export default function CategoryArticle({ params }) {
     </React.Fragment>
   ));
 
+  const articles = articleData.filter(
+    (article) => article.category === category.title
+  );
+
   return (
     <>
       <header className='text-center px-10 md:px-16 bg-primary-100 py-24'>
@@ -37,7 +42,7 @@ export default function CategoryArticle({ params }) {
         </div>
       </header>
       <div className='flex justify-between px-10 md:px-16 mt-16 mb-24 pb-96 relative'>
-        <AllArticle />
+        <AllArticle articles={articles} />
         <div>
           <TitleSection>Semua Kategori</TitleSection>
           <div className='flex flex-col gap-y-5 mt-14'>
