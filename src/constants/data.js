@@ -254,3 +254,24 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const articleCategory = [
+  {
+    title: 'Kesehatan Mental',
+    slug: 'kesehatan-mental',
+    description:
+      "Mental health itu sebenarnya simpel aja, tapi penting banget, lho! Ini tentang kesehatan pikiran dan perasaan kita. \n Jadi, bayangin kayaknya kita lagi ngurusin 'gym' buat otot pikiran kita gitu. Di sini, kita bakal \n bahas cara menghadapi stres, ngejaga mood, sampe tips buat dapetin energi positif. \n Jadi, ayo eksplorasi bersama-sama, dan mari berbagi tentang \n bagaimana kita bisa merawat pikiran kita dengan baik. \n Let's keep it chill and healthy, guys!",
+  },
+  {
+    title: 'Pola Makan',
+    slug: 'pola-makan',
+    description:
+      'Ayo, mari kita eksplorasi lebih dalam tentang pola makan yang dapat menjadi fondasi kuat bagi \n kesehatan mental kita. Dengan memilih makanan yang kaya akan nutrisi dan mengandung \n zat-zat penting, kita tidak hanya memberi energi  pada tubuh kita tetapi juga merawat \n pikiran kita dengan baik. Melalui pemahaman yang lebih mendalam tentang \n hubungan antara makanan dan kesejahteraan mental, kita bisa \n menemukan kekuatan untuk menjaga pikiran kita tetap \n seimbang dan terjaga.',
+  },
+  {
+    title: 'Aktivitas Fisik',
+    slug: 'aktivitas-fisik',
+    description:
+      'Saatnya kita bergerak sekarang, bukan hanya untuk tubuh tetapi juga untuk pikiran kita! Aktivitas fisik \n merupakan langkah penting dalam menjaga kesehatan mental kita.  Dengan rutin berolahraga, \n baik itu berjalan santai, yoga, atau latihan kekuatan,  kita membantu melepaskan stres, \n meningkatkan suasana hati, dan menciptakan ruang bagi pikiran kita untuk merasa \n segar dan positif. Ayo, jaga kebugaran pikiran kita dengan langkah-langkah \n sederhana menuju kesehatan mental yang lebih baik!',
+  },
+];

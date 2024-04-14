@@ -5,10 +5,10 @@ import Article1 from '@/assets/image-blog-1.png';
 const Header = () => {
   return (
     <header className='px-10 md:px-16 py-20 bg-primary-100'>
-      <div className='flex flex-col md:flex-row justify-between items-start gap-10'>
+      <div className='flex flex-col md:flex-row justify-between items-start gap-y-10'>
         <div>
           <TitleSection>Ditampilkan Bulan Ini</TitleSection>
-          <div className='flex flex-col md:flex-row gap-y-10 gap-x-24 mt-14'>
+          <div className='flex flex-col md:flex-row gap-y-10 mt-14'>
             <CardArticle
               key={1}
               author={'Hizkia'}
@@ -24,6 +24,7 @@ const Header = () => {
               slug={
                 'makanan-sehat-pikiran-sehat-menjaga-kesehatan-mental-melalui-pola-makan'
               }
+              className='mr-12'
             />
             <CardArticle
               key={1}
@@ -41,7 +42,6 @@ const Header = () => {
                 'makanan-sehat-pikiran-sehat-menjaga-kesehatan-mental-melalui-pola-makan'
               }
             />
-            <div></div>
           </div>
         </div>
         <div className='mt-1 mb-5 md:mt-20 md:mb-0 w-full md:w-0.5 h-0.5 md:h-[500px] bg-black' />
