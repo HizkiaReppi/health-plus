@@ -19,30 +19,46 @@ export default function Article() {
           <TitleSection>Semua Kategori</TitleSection>
           <div className='flex flex-col gap-y-5 mt-14'>
             <Link
-              href='/article/category/kesehatan-mental'
+              href='/artikel/kategori/kesehatan-mental'
               className='inline-flex items-center pl-5 w-[297px] h-20 text-xl font-semibold rounded-md bg-transparent border-[3px] border-primary-300'
             >
-              <Image src={kesehatanMentalIcon} className='w-[52px] pr-2' />
+              <Image
+                src={kesehatanMentalIcon}
+                alt='Kesehatan Mental Icon'
+                className='w-[52px] pr-2'
+              />
               Kesehatan Mental
             </Link>
             <Link
-              href='/article/category/pola-makan'
+              href='/artikel/kategori/pola-makan'
               className='inline-flex items-center pl-5 w-[297px] h-20 text-xl font-semibold rounded-md bg-transparent border-[3px] border-primary-300'
             >
-              <Image src={polaMakanIcon} className='w-[52px] pr-2' />
+              <Image
+                src={polaMakanIcon}
+                alt='Pola Makan Icon'
+                className='w-[52px] pr-2'
+              />
               Pola Makan
             </Link>
             <Link
-              href='/article/category/aktivitas-fisik'
+              href='/artikel/kategori/aktivitas-fisik'
               className='inline-flex items-center pl-5 w-[297px] h-20 text-xl font-semibold rounded-md bg-transparent border-[3px] border-primary-300'
             >
-              <Image src={aktivitasFisikIcon} className='w-[52px] pr-2' />
+              <Image
+                src={aktivitasFisikIcon}
+                alt='Aktivitas Fisik Icon'
+                className='w-[52px] pr-2'
+              />
               Aktivitas Fisik
             </Link>
           </div>
         </div>
         <div className='absolute -bottom-40 right-0'>
-          <Image src={allArticleIlustration} className='w-[824px]' />
+          <Image
+            src={allArticleIlustration}
+            alt='All Article Ilustration'
+            className='w-[824px]'
+          />
         </div>
       </div>
     </>

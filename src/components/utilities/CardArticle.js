@@ -30,7 +30,7 @@ const CardArticle = (props) => {
         </h6>
         <TextWithEllipsis text={props.content} wordCount={25} />
         <Link
-          href={`/article/${props.slug}`}
+          href={`/artikel/${props.slug}`}
           className='text-[10px] md:text-xs font-semibold text-primary-500 hover:text-primary-700 duration-200'
         >
           Baca Selengkapnya

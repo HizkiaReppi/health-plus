@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { MdClose } from 'react-icons/md';
@@ -10,6 +11,8 @@ import Button from './Button';
 import NavLink from './NavLink';
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
@@ -26,30 +29,37 @@ const Navbar = () => {
   return (
     <nav className='sticky top-0 left-0 flex justify-between items-center px-10 md:px-16 py-5 bg-primary-50 z-50 shadow-lg'>
       <Link href='/'>
-        <Image src={logo} className='w-32 md:w-52' />
+        <Image src={logo} alt='Health Plus' className='w-32 md:w-52' />
       </Link>
 
       {/* Menu */}
       <ul className='hidden md:flex justify-between items-center gap-10'>
         <li>
-          <NavLink href='/' active={true}>
-            Home
+          <NavLink href='/' active={pathname == '/'}>
+            Beranda
           </NavLink>
         </li>
         <li>
-          <NavLink href='/about'>About</NavLink>
+          <NavLink
+            href='/tentang-kami'
+            active={pathname.startsWith('/tentang-kami')}
+          >
+            Tentang
+          </NavLink>
         </li>
         <li>
-          <NavLink href='/article'>Blog</NavLink>
+          <NavLink href='/artikel' active={pathname.startsWith('/artikel')}>
+            Artikel
+          </NavLink>
         </li>
         <li>
-          <Link href='/login'>
-            <Button outline={true}>Login</Button>
+          <Link href='/masuk'>
+            <Button outline={true}>Masuk</Button>
           </Link>
         </li>
         <li>
-          <Link href='/register'>
-            <Button>Register</Button>
+          <Link href='/daftar'>
+            <Button>Daftar</Button>
           </Link>
         </li>
       </ul>
@@ -76,26 +86,33 @@ const Navbar = () => {
         }
       >
         <li>
-          <NavLink href='/' active={true}>
-            Home
+          <NavLink href='/' active={pathname == '/'}>
+            Beranda
           </NavLink>
         </li>
         <li>
-          <NavLink href='/about'>About</NavLink>
+          <NavLink
+            href='/tentang-kami'
+            active={pathname.startsWith('/tentang-kami')}
+          >
+            Tentang
+          </NavLink>
         </li>
         <li>
-          <NavLink href='/article'>Blog</NavLink>
+          <NavLink href='/artikel' active={pathname.startsWith('/artikel')}>
+            Artikel
+          </NavLink>
         </li>
         <li>
-          <Link href='/login'>
+          <Link href='/masuk'>
             <Button className='px-3 py-2 text-sm' outline={true}>
-              Login
+              Masuk
             </Button>
           </Link>
         </li>
         <li>
-          <Link href='/register'>
-            <Button className='px-3 py-2 text-sm'>Register</Button>
+          <Link href='/daftar'>
+            <Button className='px-3 py-2 text-sm'>Daftar</Button>
           </Link>
         </li>
       </ul>

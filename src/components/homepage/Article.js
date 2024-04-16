@@ -13,18 +13,22 @@ const Article = () => {
       <>
         <Image
           src={tigaDaunBesarImage}
+          alt='Tiga Daun Besar'
           className='absolute z-0 -bottom-1.5 md:-bottom-3.5 -left-4 w-24 md:w-48 object-cover'
         />
         <Image
           src={tigaDaunKecilImage}
+          alt='Tiga Daun Kecil'
           className='absolute z-0 -top-6 md:-top-12 -left-6 w-48 md:w-96 object-cover'
         />
         <Image
           src={tigaDaunKecilImage}
+          alt='Tiga Daun Kecil'
           className='absolute z-0 rotate-180 -bottom-5 -right-5 md:-right-3 w-40 md:w-80 object-cover'
         />
         <Image
           src={daunBesarImage}
+          alt='Daun Besar'
           className='absolute z-0 -top-1 md:-top-3 -right-1 md:-right-3 w-20 md:w-40 object-cover'
         />
       </>
@@ -38,7 +42,7 @@ const Article = () => {
         ))}
       </div>
       <div className='flex justify-center mt-10 z-10'>
-        <Link href='/article'>
+        <Link href='/artikel'>
           <Button className='md:px-14 px-7 text-xs md:text-base'>
             Lihat Semua Artikel
           </Button>

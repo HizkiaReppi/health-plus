@@ -211,11 +211,11 @@ export const footerLinks = [
       },
       {
         title: 'Tentang Kami',
-        href: '/about',
+        href: '/tentang-kami',
       },
       {
         title: 'Cek Kebiasaan',
-        href: '/assesment',
+        href: '/cek-kebiasaan',
       },
     ],
   },
@@ -224,19 +224,19 @@ export const footerLinks = [
     links: [
       {
         title: 'Semua Artikel',
-        href: '/article',
+        href: '/artikel',
       },
       {
         title: 'Kesehatan Mental',
-        href: '/article/category/kesehatan-mental',
+        href: '/artikel/kategori/kesehatan-mental',
       },
       {
         title: 'Pola Makan',
-        href: '/article/category/pola-makan',
+        href: '/artikel/kategori/pola-makan',
       },
       {
         title: 'Aktivitas Fisik',
-        href: '/article/category/aktivitas-fisik',
+        href: '/artikel/kategori/aktivitas-fisik',
       },
     ],
   },

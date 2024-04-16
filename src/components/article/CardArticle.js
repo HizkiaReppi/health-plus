@@ -42,7 +42,7 @@ const CardArticle = ({
       <div>
         <Category category={category} />
         <h3 className='text-xl font-semibold mt-5'>
-          <Link href={`/article/${slug}`}>{title}</Link>
+          <Link href={`/artikel/${slug}`}>{title}</Link>
         </h3>
         {withImage == true && imageLeft == false ? (
           <div className='relative rounded-[10px] h-[200px] overflow-hidden mt-4'>

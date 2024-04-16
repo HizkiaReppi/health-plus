@@ -16,14 +16,14 @@ const Footer = () => {
       <div className='absolute w-full'>
         <Image
           src={footerBackground}
-          alt=''
+          alt='Footer Background'
           className='object-cover min-w-full'
         />
       </div>
       <div className='z-10 absolute top-40 md:top-80 px-16 bg-primary-100 w-full'>
         <div className='flex flex-col md:flex-row justify-between items-start gap-14'>
           <div>
-            <Image src={logo} height={80} />
+            <Image src={logo} alt='Health Plus' height={80} />
             <p className='text-sm text-justify my-6 w-full md:w-[515px]'>
               <span className='text-[#8BD039] font-bold'>Health</span>
               <span className='text-[#70C3DE] font-bold'>Plus</span>, teman Anda

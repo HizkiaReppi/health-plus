@@ -16,21 +16,29 @@ const DetailArticle = (props) => {
       <h1 className='text-4xl font-semibold text-black my-5'>{props.title}</h1>
       <div className='flex items-center'>
         <div className='flex items-center gap-2'>
-          <Image src={writter} className='w-[11.48px] h-[13.5px]' />
+          <Image
+            src={writter}
+            alt='Writter Icon'
+            className='w-[11.48px] h-[13.5px]'
+          />
           <span className='h-3 w-[1px] border-[0.1px] border-[#999999]'></span>
           <span className='text-base font-semibold text-[#777777]'>
             {props.author}
           </span>
         </div>
         <div className='flex items-center gap-2 pl-2'>
-          <Image src={calendar} className='w-[14px] h-[14.8px]' />
+          <Image
+            src={calendar}
+            alt='Calendar Icon'
+            className='w-[14px] h-[14.8px]'
+          />
           <span className='h-3 w-[1px] border-[0.1px] border-[#999999]'></span>
           <span className='text-base font-semibold text-[#777777]'>
             {formattedDate}
           </span>
         </div>
         <div className='flex items-center gap-2 pl-2'>
-          <Image src={clock} className='w-[14px] h-[14px]' />
+          <Image src={clock} alt='Clock Icon' className='w-[14px] h-[14px]' />
           <span className='h-3 w-[1px] border-[0.1px] border-[#999999]'></span>
           <span className='text-base font-semibold text-[#777777]'>
             {readingTime} Menit Baca
@@ -39,6 +47,7 @@ const DetailArticle = (props) => {
       </div>
       <Image
         src={props.image}
+        alt={props.title}
         className='w-full object-cover rounded-lg mt-8'
       />
       <div

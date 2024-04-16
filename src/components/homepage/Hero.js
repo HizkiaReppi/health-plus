@@ -16,7 +16,7 @@ const Hero = () => {
           Mulailah dengan Mengidentifikasi Kebiasaan Positif dan Negatif melalui
           Aktivitas Interaktif ini untuk Memperbaiki Kualitas Hidupmu!
         </h6>
-        <Link href='/assessment'>
+        <Link href='/cek-kebiasaan'>
           <Button className='text-sm'>Ayo Cek Kebiasaanmu</Button>
         </Link>
       </div>

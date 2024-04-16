@@ -49,7 +49,7 @@ export default function DetailArticlePage({ params }) {
           ))}
         </div>
         <div className='flex justify-center mt-10'>
-          <Link href={`/article/category/${category}`}>
+          <Link href={`/artikel/kategori/${category}`}>
             <Button className='md:px-14 px-7 text-xs md:text-base'>
               Lihat Semua
             </Button>
