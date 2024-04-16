@@ -13,8 +13,10 @@
     "flowbite": "^2.3.0",
     "next": "14.1.4",
     "react": "^18",
+    "react-calendar": "^4.8.0",
     "react-dom": "^18",
-    "react-icons": "^5.0.1"
+    "react-icons": "^5.0.1",
+    "tailwind-datepicker-react": "^1.4.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

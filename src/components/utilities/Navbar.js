@@ -9,9 +9,11 @@ import { MdClose } from 'react-icons/md';
 import logo from '@/assets/logo.svg';
 import Button from './Button';
 import NavLink from './NavLink';
+import { useAuth } from '@/app/(app)/providers';
 
 const Navbar = () => {
   const pathname = usePathname();
+  const { token, logout } = useAuth();
 
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -52,16 +54,33 @@ const Navbar = () => {
             Artikel
           </NavLink>
         </li>
-        <li>
-          <Link href='/masuk'>
-            <Button outline={true}>Masuk</Button>
-          </Link>
-        </li>
-        <li>
-          <Link href='/daftar'>
-            <Button>Daftar</Button>
-          </Link>
-        </li>
+        {!token ? (
+          <>
+            <li>
+              <Link href='/masuk'>
+                <Button outline={true}>Masuk</Button>
+              </Link>
+            </li>
+            <li>
+              <Link href='/daftar'>
+                <Button>Daftar</Button>
+              </Link>
+            </li>
+          </>
+        ) : (
+          <>
+            <li>
+              <Button outline={true} onClick={logout}>
+                Keluar
+              </Button>
+            </li>
+            <li>
+              <Link href='/dashboard'>
+                <Button>Dashboard</Button>
+              </Link>
+            </li>
+          </>
+        )}
       </ul>
 
       {/* Hamburger */}
