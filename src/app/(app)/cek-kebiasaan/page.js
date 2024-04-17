@@ -1,8 +1,21 @@
+'use client';
+
 import Image from 'next/image';
 import cekKebiasaanImage from '@/assets/cek-kebiasaan-background.png';
 import Link from 'next/link';
+import { useAuth } from '../providers';
+import { useRouter } from 'next/navigation';
 
 export default function CekKebiasaanPage() {
+  const { token } = useAuth();
+
+  const router = useRouter();
+
+  if (!token) {
+    router.push('/masuk');
+    return null;
+  }
+
   return (
     <div>
       <Image

@@ -1,8 +1,19 @@
 'use client';
 import Button from '@/components/utilities/Button';
 import React from 'react';
+import { useAuth } from '../../providers';
+import { useRouter } from 'next/navigation';
 
 export default function PertanyaanPage() {
+  const { token } = useAuth();
+
+  const router = useRouter();
+
+  if (!token) {
+    router.push('/masuk');
+    return null;
+  }
+
   const [questions, setQuestions] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [currentPage, setCurrentPage] = React.useState(1);

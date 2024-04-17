@@ -1,5 +1,7 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 import DailyChallenge from '@/components/dashboard/DailyChallenge';
 import Greeting from '@/components/dashboard/Greeting';
@@ -8,8 +10,18 @@ import bgDashboard from '@/assets/bg-dashboard.png';
 import Calendar from '@/components/dashboard/Calendar';
 import WeeklyChallenge from '@/components/dashboard/WeeklyChallenge';
 import MonthlyGoals from '@/components/dashboard/MonthlyGoals';
+import { useAuth } from '@/app/(app)/providers';
 
 export default function DashboardPage() {
+  const { token } = useAuth();
+
+  const router = useRouter();
+
+  if (!token) {
+    router.push('/masuk');
+    return null;
+  }
+
   return (
     <div>
       <header className='relative'>

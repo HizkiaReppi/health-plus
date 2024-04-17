@@ -38,7 +38,7 @@ const WeeklyChallenge = () => {
                   className='w-5 h-5 md:w-6 md:h-6 text-primary-600 bg-white border-gray-300 rounded focus:ring-primary-500 focus:ring-2'
                 />
                 <label
-                  for='jogging-setiap-pagi-minimal-30-menit'
+                  htmlFor='jogging-setiap-pagi-minimal-30-menit'
                   className='w-full py-3 ms-4 text-base md:text-lg font-semibold text-black group-checked:line-through'
                 >
                   Jogging setiap pagi minimal 30 menit
@@ -54,7 +54,7 @@ const WeeklyChallenge = () => {
                   className='w-5 h-5 md:w-6 md:h-6 text-primary-600 bg-white border-gray-300 rounded focus:ring-primary-500 focus:ring-2'
                 />
                 <label
-                  for='badminton-setiap-hari-minggu-minimal-1-jam'
+                  htmlFor='badminton-setiap-hari-minggu-minimal-1-jam'
                   className='w-full py-3 ms-4 text-base md:text-lg font-semibold text-black'
                 >
                   Badminton setiap hari minggu minimal 1 jam
@@ -84,7 +84,7 @@ const WeeklyChallenge = () => {
                   className='w-5 h-5 md:w-6 md:h-6 text-primary-600 bg-white border-gray-300 rounded focus:ring-primary-500 focus:ring-2'
                 />
                 <label
-                  for='kurangi-makanan-cepat-saji'
+                  htmlFor='kurangi-makanan-cepat-saji'
                   className='w-full py-3 ms-4 text-base md:text-lg font-semibold text-black'
                 >
                   Kurangi makanan cepat saji
