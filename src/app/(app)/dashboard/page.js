@@ -6,6 +6,8 @@ import Greeting from '@/components/dashboard/Greeting';
 
 import bgDashboard from '@/assets/bg-dashboard.png';
 import Calendar from '@/components/dashboard/Calendar';
+import WeeklyChallenge from '@/components/dashboard/WeeklyChallenge';
+import MonthlyGoals from '@/components/dashboard/MonthlyGoals';
 
 export default function DashboardPage() {
   return (
@@ -29,6 +31,14 @@ export default function DashboardPage() {
         </div>
         <div>
           <Calendar />
+        </div>
+      </section>
+      <section className='px-10 md:px-16 my-8 flex flex-col-reverse md:flex-row justify-between gap-x-20 gap-y-10 items-center md:items-start'>
+        <div className='w-full'>
+          <WeeklyChallenge />
+        </div>
+        <div className='w-full'>
+          <MonthlyGoals />
         </div>
       </section>
     </div>
