@@ -1,4 +1,19 @@
-import DrDian from '@/assets/dr-dian-wulan.png';
+// Trusted by photo
+import drDian from '@/assets/dr/dr-dian.png';
+import drBambang from '@/assets/dr/dr-bambang.png';
+import drCindy from '@/assets/dr/dr-cindy.png';
+import drHanifah from '@/assets/dr/dr-hanifah.png';
+import drGabriel from '@/assets/dr/dr-gabriel.png';
+
+// Testimonials photo
+import anisaPratiwi from '@/assets/testimonials/anisapratiwi.png';
+import budiSantoso from '@/assets/testimonials/budisantoso88.png';
+import dianMaulana from '@/assets/testimonials/dianmaulana_fit.png';
+import fitrianiHasanah from '@/assets/testimonials/fitriani_hasanah.png';
+import gitaWijaya from '@/assets/testimonials/gitawijaya.official.png';
+import heruKusuma from '@/assets/testimonials/heru_kusuma.png';
+import jokoSusanto from '@/assets/testimonials/jokosusanto_healthy.png';
+import lutfiRachman from '@/assets/testimonials/lutfirachmanfit.png';
 
 import MakanSayur from '@/assets/makan-sayur-image.png';
 import Jooging from '@/assets/jogging-image.png';
@@ -15,27 +30,27 @@ import { RiFacebookCircleLine } from 'react-icons/ri';
 
 export const trustedBy = [
   {
-    image: DrDian,
+    image: drDian,
     name: 'Dr. Dian Wulan, Sp.Kes.T',
     title: 'Spesialis Kesehatan Lingkungan',
   },
   {
-    image: DrDian,
+    image: drBambang,
     name: 'Dr. Bambang S, Sp.Kes.G',
     title: 'Spesialis Kesehatan Gigi Masyarakat',
   },
   {
-    image: DrDian,
+    image: drCindy,
     name: 'Dr. Cindy P, Sp.Kes.P',
     title: 'Spesialis Kesehatan Jiwa',
   },
   {
-    image: DrDian,
+    image: drHanifah,
     name: 'Dr. Hanifah I, Sp.Kes.S',
     title: 'Spesialis Kesehatan Sekolah',
   },
   {
-    image: DrDian,
+    image: drGabriel,
     name: 'Dr. Gabriel Tuju, M.Kes',
     title: 'Spesialis Dokter Universitas',
   },
@@ -119,7 +134,7 @@ export const articleData = [
 export const testimonials = [
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3b',
-    image: DrDian,
+    image: anisaPratiwi,
     name: 'Anisa Pratiwi',
     username: 'anisapratiwi',
     content:
@@ -127,7 +142,7 @@ export const testimonials = [
   },
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3c',
-    image: DrDian,
+    image: budiSantoso,
     name: 'Budi Santoso',
     username: 'budisantoso88',
     content:
@@ -135,7 +150,7 @@ export const testimonials = [
   },
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3d',
-    image: DrDian,
+    image: dianMaulana,
     name: 'Dian Maulana',
     username: 'dianmaulana_fit',
     content:
@@ -143,7 +158,7 @@ export const testimonials = [
   },
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3e',
-    image: DrDian,
+    image: fitrianiHasanah,
     name: 'Fitriani Hasanah',
     username: 'fitriani_hasanah',
     content:
@@ -151,7 +166,7 @@ export const testimonials = [
   },
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3f',
-    image: DrDian,
+    image: lutfiRachman,
     name: 'Lutfi Rachman',
     username: 'lutfirachmanfit',
     content:
@@ -159,7 +174,7 @@ export const testimonials = [
   },
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3g',
-    image: DrDian,
+    image: jokoSusanto,
     name: 'Joko Susanto',
     username: 'jokosusanto_healthy',
     content:
@@ -167,7 +182,7 @@ export const testimonials = [
   },
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3h',
-    image: DrDian,
+    image: heruKusuma,
     name: 'Heru Kusuma',
     username: 'heru_kusuma',
     content:
@@ -175,7 +190,7 @@ export const testimonials = [
   },
   {
     id: 'f1b3b3b4-1b3b-4b3b-8b3b-3b3b3b3b3b3i',
-    image: DrDian,
+    image: gitaWijaya,
     name: 'Gita Wijaya',
     username: 'gitawijaya.official',
     content:

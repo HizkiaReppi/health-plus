@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import cekKebiasaanImage from '@/assets/cek-kebiasaan-background.png';
+import cekKebiasaanImage from '@/assets/assesment/header-assesment.png';
 import Link from 'next/link';
 import { useAuth } from '../providers';
 import { useRouter } from 'next/navigation';
@@ -21,7 +21,7 @@ export default function CekKebiasaanPage() {
       <Image
         src={cekKebiasaanImage}
         alt='Cek Kebiasaan Image'
-        className='w-full object-cover'
+        className='w-1/2 mt-5 mx-auto object-cover'
       />
       <div className='px-10 md:px-16 py-10'>
         <h1 className='text-xl md:text-3xl lg:text-5xl font-semibold'>

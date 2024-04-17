@@ -1,8 +1,12 @@
 import Image from 'next/image';
-import aboutBackground from '@/assets/about-image.png';
-import introductionAboutImage from '@/assets/introduction-about-image.png';
-import ourGoalImage from '@/assets/tujuan-kami-image.png';
+import aboutBackground from '@/assets/about/header-about.png';
+import introductionAboutImage from '@/assets/about/about-desc.png';
+import ourGoalImage from '@/assets/about/our-goals.png';
 import hizkiaReppi from '@/assets/member/hizkia-reppi.jpg';
+import graceZalukhu from '@/assets/member/grace-zalukhu.jpg';
+import nasywa from '@/assets/member/nasywa.jpg';
+import citra from '@/assets/member/citra.JPG';
+import bintang from '@/assets/member/bintang.jpg';
 import MemberDetail from '@/components/tentang-kami/MemberDetail';
 
 const data = [
@@ -12,22 +16,22 @@ const data = [
     position: 'Programmer',
   },
   {
-    image: hizkiaReppi,
+    image: graceZalukhu,
     name: 'Grace Natalia Zalukhu',
     position: 'Programmer',
   },
   {
-    image: hizkiaReppi,
+    image: citra,
     name: 'Citra Dewi Puspita Sari',
     position: 'Desain UI/UX',
   },
   {
-    image: hizkiaReppi,
+    image: nasywa,
     name: 'Nasywa Zafirah Syahrani',
     position: 'Desain UI/UX',
   },
   {
-    image: hizkiaReppi,
+    image: bintang,
     name: 'Bintang Mahaputra Ramadhan',
     position: 'Projek Manager',
   },
@@ -36,15 +40,12 @@ const data = [
 export default function AboutPage() {
   return (
     <>
-      <header className='relative'>
+      <header>
         <Image
           src={aboutBackground}
           alt='About Background'
           className='w-full object-cover'
         />
-        <h1 className='absolute top-8 md:top-14 lg:top-20 flex justify-center w-full text-3xl md:text-4xl lg:text-5xl font-semibold uppercase'>
-          Tentang Kami
-        </h1>
       </header>
 
       <section className='flex gap-10 px-10 md:px-16 py-10'>
