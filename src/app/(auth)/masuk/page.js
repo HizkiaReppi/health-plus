@@ -193,16 +193,24 @@ export default function MasukPage() {
             </Button>
           )}
           {manualLogin && (
-            <Button
-              type='submit'
-              className='mt-5 w-full disabled:bg-gray-100 flex justify-center items-center gap-3'
-              disabled={loading}
-            >
-              {loading && (
-                <div className='w-5 h-5 border-2 border-t-[#8BD039] rounded-full animate-spin'></div>
-              )}
-              Masuk Sekarang
-            </Button>
+            <>
+              <Link
+                href='/lupa-password'
+                className='text-primary-500 text-sm inline-block mt-3'
+              >
+                Lupa Password?
+              </Link>
+              <Button
+                type='submit'
+                className='mt-5 w-full disabled:bg-gray-100 flex justify-center items-center gap-3'
+                disabled={loading}
+              >
+                {loading && (
+                  <div className='w-5 h-5 border-2 border-t-[#8BD039] rounded-full animate-spin'></div>
+                )}
+                Masuk Sekarang
+              </Button>
+            </>
           )}
           <p className='text-sm text-center mt-5'>
             Belum memiliki akun?{' '}
