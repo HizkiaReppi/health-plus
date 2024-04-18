@@ -21,10 +21,10 @@ export default function DashboardPage() {
 
   const router = useRouter();
 
-  // if (!token) {
-  //   router.push('/masuk');
-  //   return null;
-  // }
+  if (!token) {
+    router.push('/masuk');
+    return null;
+  }
 
   return (
     <div>
